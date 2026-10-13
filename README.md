@@ -1,5 +1,17 @@
 # openWorkBenches-code
 
+The main product assembly: bench catalogs, compatible component versions, shared images, integration validation, and assembled releases.
+
+Components each have their own assembly, spec, and code repositories:
+
+| Component | Assembly repository |
+|---|---|
+| Desktop and mobile app | [openWorkBenchesApp](https://github.com/opensoft/openWorkBenchesApp) |
+| Installer and CLI | [openWorkBenchesCli](https://github.com/opensoft/openWorkBenchesCli) |
+| Organization service | [openWorkBenchesService](https://github.com/opensoft/openWorkBenchesService) |
+
+Component assembly names follow the current openRepoShape naming policy. Product integration will consume exact component revisions; the initial scaffold pins its own spec and code legs.
+
 The **code leg** of the `openworkbenches` project: the implementation and its
 tests. The requirements it implements live in
 [`opensoft/openWorkBenches-spec`](https://github.com/opensoft/openWorkBenches-spec).
@@ -25,3 +37,8 @@ navigation; authority travels in grants, and a project that keeps spec and
 code in one repository is reviewed identically.
 
 Topic: `xf-project-openworkbenches`.
+
+
+## License
+
+Apache-2.0. Copyright 2026 OpenSoft. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
